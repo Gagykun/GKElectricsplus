@@ -1,24 +1,27 @@
 {
-	"type": "SingleTypeGenerator",
-	"name": "Combustion Generator+",
-	"description": "Improving the combustion chamber allows for a faster compression stroke resulting in more power output.",
-	"size": 1,
-	"hasPower": true,
-	"hasItems": true,
-	"itemDuration": 105.0,
-	"powerProduction": 1.4,
-	"heatColor": 9003fc,
-	"consumes": {
-		"items": {
-			"items": [
-				{ "item": "coal", "amount": 1 }
-			],
-			"optional": true
-		}
-	},
-	"requirements": [
-		{ "item": "copper", "amount": 50 },
-		{ "item": "lead", "amount": 20 }
-	],
-	"category": "power",
+  type: "ConsumeGenerator"
+  name: "Combustion Generator+"
+  description: "Improving the combustion chamber allows for a faster compression stroke resulting in more power output."
+  size: 1
+  hasPower: true
+  hasItems: true
+  itemDuration: 105
+  powerProduction: 1.4
+  consumes: {
+    items: {
+      items: [
+        {item: "coal", amount: 1}
+      ]
+      optional: true
+    }
+  }
+  drawer: [
+    {type: "DrawDefault"}
+    {type: "DrawWarmupRegion"}
+  ]
+  requirements: [
+    {item: "copper", amount: 50}
+    {item: "lead", amount: 20}
+  ]
+  category: "power"
 }
