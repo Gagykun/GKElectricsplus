@@ -24,7 +24,10 @@
   drawer: [
     {type: "DrawDefault"}
     {type: "DrawWarmupRegion"}
-    {type: "DrawLiquidRegion"}
+    {
+      type: "DrawLiquidRegion"
+      drawLiquid: "water"
+    }
   ]
   requirements: [
     {item: "copper", amount: 120}
